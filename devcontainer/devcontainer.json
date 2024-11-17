@@ -1,0 +1,10 @@
+{
+  "name": "Kubernetes Environment",
+"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "docker-in-docker": "latest"
+  },
+  "postCreateCommand": "kind create cluster --name dev",
+  "forwardPorts": [8080, 30000],
+  "remoteUser": "vscode"
+}
