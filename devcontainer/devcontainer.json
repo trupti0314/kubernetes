@@ -1,6 +1,10 @@
 {
   "name": "Kubernetes Environment",
-"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  {
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
   "features": {
     "docker-in-docker": "latest"
   },
